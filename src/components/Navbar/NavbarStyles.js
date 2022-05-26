@@ -14,7 +14,10 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 2;
   width: 100%;
+
   transition: background-color 0.3 ease-in;
+
+
 `;
 export const NavbarContainer = styled(Container)`
   display: flex;
@@ -22,6 +25,7 @@ export const NavbarContainer = styled(Container)`
   overflow: hidden;
   height: 80px;
   ${Container}
+
 `;
 export const NavLogo = styled.nav`
   color: #fff;
@@ -32,16 +36,17 @@ export const NavLogo = styled.nav`
   display: flex;
   align-items: center;
   z-index: 50;
-`;
 
+`;
+// export const NavIcon = styled.nav``
 export const MobileIcon = styled.div`
   display: none;
   z-index: 50;
   @media screen and (max-width: 960px) {
-    display: block; // used for displaying  navbar items in block when the screen is resized
+    display: block;
     position: absolute;
     top: 0;
-    right: 100px;
+    right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
@@ -59,6 +64,7 @@ export const NavMenu = styled.ul`
   flex: 0.6;
   margin-left: 150px;
   opacity: 0.6;
+
   @media screen and (max-width: 960px) {
     flex-direction: column;
     width: 100%;
@@ -80,7 +86,28 @@ export const NavMenu = styled.ul`
 	} */
 `;
 export const NavLinks = styled.span``;
+// color: #fff;
+// 	display: flex;
+// 	align-items: center;
+// 	text-decoration: none;
+// 	padding: 0.5rem 1rem;
+// 	height: 100%;
+// 	&:hover {
+// 		color: #c8c9d8;
+// 		transition: all 0.3s ease;
+// 	}
+// 	@media screen and (max-width: 960px) {
+// 		text-align: center;
+// 		padding: 2rem;
+// 		width: 100%;
+// 		display: table;
+// 		&:hover {
+// 			color: #4b59f7;
+// 			transition: all 0.3s ease;
+// 		}
+// 	}
 
+// `
 
 export const NavItem = styled.li`
   height: 80px;

@@ -1,28 +1,58 @@
 import React from "react";
-import { Container, MainHeading } from "../../globalStyles";
-import {  HeadphoneButton } from "../Headphones/HeadphoneStyles";
-import { Zx9Section, Zx9Image, Zx9Heading, Zx9Text, Zx9Button,ButtonWrapper } from "./Zx9Styles";
+import { Container, Section } from "../../globalStyles";
+import {
+  ContentButton,
+  ContentColumn,
+  ContentRow,
+  Heading,
+  Img,
+  ImgWrapper,
+  Subtitle,
+  TextWrapper,
+  TopLine,
+  Zx9Button,
+  Zx9Heading,
+  Zx9Image,
+  Zx9Text,
+  Zx9Wrapper,
+} from "./Zx9Styles";
 
-const Zx9 = () => {
+const ZX9t = () => {
   return (
-    <>
-      <Zx9Section>
-        <Zx9Image src="./assests/SPEAKER.png" />
-        <Container>
-          <Zx9Heading>
-            ZX9
-            <br />
-            SPEAKER
-          </Zx9Heading>
-          <Zx9Text>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</Zx9Text>
-          <ButtonWrapper>
-          {/* <Button>get started</Button> */}
-          <Zx9Button>SEE PRODUCT</Zx9Button>
-        </ButtonWrapper>
-        </Container>
-      </Zx9Section>
-    </>
+    <Section inverse="a">
+    <Container>
+      <Zx9Wrapper>
+      <ContentRow>
+      <ContentColumn>
+          <ImgWrapper>
+            <Img src="./assests/SPEAKER.png"
+              whileHover={{ rotate: 2, scale: 1.02 }}
+              transition={{ duration: 0.5 }}
+            />
+          </ImgWrapper>
+        </ContentColumn>
+        <ContentColumn>
+          <TextWrapper>
+            {/* <TopLine>
+         This is top line
+            </TopLine> */}
+            <Heading>
+            ZX9 SPEAKER
+            </Heading>
+            <Subtitle>
+            Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.
+            </Subtitle>
+            <ContentButton>
+            SEE PRODUCT
+            </ContentButton>
+          </TextWrapper>
+        </ContentColumn>
+       
+      </ContentRow>
+      </Zx9Wrapper>
+    </Container>
+  </Section>
   );
 };
 
-export default Zx9;
+export default ZX9t;
