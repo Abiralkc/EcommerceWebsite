@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Yx1 from "../components/yx1/Yx1";
 import Zx7 from "../components/zx7/Zx7";
 import Zx9 from "../components/zx9/Zx9";
+import Footer from "../components/Footer/Footer";
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
       <Zx7 />
       <Yx1 />
       <Description/>
+      <Footer/>
     </>
   );
 };

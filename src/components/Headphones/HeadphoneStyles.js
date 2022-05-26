@@ -80,3 +80,6 @@ ${MainHeading}
 
 
 `
+export const Wrapper=styled.span`
+padding-top: 50px;
+`

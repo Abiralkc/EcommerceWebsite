@@ -12,7 +12,7 @@ import {
   NavMenu,
   NavLinks,
   NavItem,
-
+ 
 } from "./NavbarStyles.js";
 import { data } from "../../data/NavbarData";
 import { useState } from "react";
@@ -21,48 +21,65 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [show, setShow] = useState(false);
 
-
+//   let history = useHistory();
+//   let location = useLocation();
 
 
   const handleClick = () => {
     setShow(!show);
   };
 
+//   const scrollTo = (id) => {
+//     const element = document.getElementById(id);
 
+//     element.scrollIntoView({
+//         behavior: 'smooth',
+//     });
+// };
+
+// const closeMobileMenu = (to, id) => {
+//     if (id && location.pathname === '/') {
+//         scrollTo(id);
+//     }
+
+//     history.push(to);
+//     // navigate(to);
+//     setShow(false);
+// };
 
   return (
     <IconContext.Provider value={{ color: "#fff" }}>
       <Nav>
-
-
+        
+     
         <NavbarContainer>
-          <NavLogo to="/">Audiophile</NavLogo>
+          <NavLogo to="/">audiophile</NavLogo>
 
           <MobileIcon onClick={handleClick}>{show ? <FaTimes /> : <CgMenuRight />}</MobileIcon>
 
           <NavMenu show={show}>
 
-            {data.map((el, index) => (
+            {data.map((e1, index) => (
               <NavItem key={index}>
                 {/* <NavLinks onClick={()=>closeMobileMenu(e1.to,e1.id)}></NavLinks> */}
-                <NavLinks>
-                    {el.text}
-                    {el.icon}
-                </NavLinks>
-
+                <NavLinks>{e1.text}</NavLinks>
+      
               </NavItem>
-
+              
             ))}
-
+  
           </NavMenu>
+       
 
         </NavbarContainer>
-
+    
+       
       </Nav>
-
-
+    
+  
     </IconContext.Provider>
   );
 };
+
 
 export default Navbar;
