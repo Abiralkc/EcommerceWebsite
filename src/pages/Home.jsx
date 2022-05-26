@@ -4,6 +4,7 @@ import Headphone from "../components/Headphones/Headphone";
 import Navbar from "../components/Navbar/Navbar";
 import Zx9 from "../components/zx9/Zx9";
 import Zx7 from "../components/zx7/Zx7";
+import Yx1 from "../components/yx1/Yx1";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Categories />
       <Zx9 />
       <Zx7 />
+      <Yx1/>
     </>
   );
 };

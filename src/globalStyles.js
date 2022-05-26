@@ -5,14 +5,13 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Inika', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   }
 `;
 
 export const Container = styled.div`
 	width: 100%;
-	min-width: 991px;
-    max-width: 1440px;
+	max-width: 1300px;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 0 50px;
@@ -52,7 +51,7 @@ export const TextWrapper = styled.span`
 	margin-top: ${({ mt }) => (mt ? mt : '')};
 `;
 export const Section = styled.section`
-	padding: ${({ padding }) => (padding ? padding : '140px 0 0 0')};
+	padding: ${({ padding }) => (padding ? padding : '140px 0')};
 	margin: ${({ margin }) => (margin ? margin : '')};
 	background: ${({ inverse }) => (inverse ? 'white' : '#071c2f')};
 	position: ${({ position }) => (position ? position : '')};
