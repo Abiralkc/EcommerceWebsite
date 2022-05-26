@@ -1,4 +1,4 @@
-export const categoriesData=[
+export const categories=[
     {
         id:1,
         img:'./assests/image-headphones.png',
