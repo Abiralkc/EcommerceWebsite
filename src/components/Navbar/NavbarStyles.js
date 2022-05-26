@@ -38,7 +38,7 @@ export const MobileIcon = styled.div`
   display: none;
   z-index: 50;
   @media screen and (max-width: 960px) {
-    display: block;
+    display: block; // used for displaying  navbar items in block when the screen is resized
     position: absolute;
     top: 0;
     right: 100px;
