@@ -23,12 +23,11 @@ const Headphone = () => {
           borderColor: 'white',
           height: '1px',
           width: '100%',
-          
-          marginBottom:'60px',
-          marginTop:'-130px',
+          marginBottom:'150px',
+          marginTop:'-100px',
           opacity: "0.3",
-  
-        
+
+
       }}
           />
 
