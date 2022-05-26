@@ -25,7 +25,7 @@ const Headphone = () => {
           width: '100%',
           
           marginBottom:'60px',
-          marginTop:'-130px',
+          marginTop:'-100px',
           opacity: "0.3",
   
         
